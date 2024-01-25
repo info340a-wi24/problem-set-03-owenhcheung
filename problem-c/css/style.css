@@ -7,3 +7,35 @@ body {
 .container {
   display: flex;
 }
+
+.container section:first-child {
+  flex-basis: 240px;
+}
+
+.container section {
+  flex: 0 1;
+  padding: 1em;
+}
+
+.container section:last-child {
+  flex-basis: 180px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.container2 {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 250px;
+  background-color: white;
+  margin: .5rem;
+  border-radius: 10px;
+}
+
+.card p {
+  margin: 1rem .5rem;
+}
+
